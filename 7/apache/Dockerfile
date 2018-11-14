@@ -5,6 +5,7 @@ FROM php:7.1-apache
 RUN set -ex; \
 	\
 	if command -v a2enmod; then \
+		a2enmod ssl; \
 		a2enmod rewrite; \
 	fi; \
 	\
