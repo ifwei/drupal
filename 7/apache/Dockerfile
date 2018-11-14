@@ -6,6 +6,7 @@ RUN set -ex; \
 	\
 	if command -v a2enmod; then \
 		a2enmod rewrite; \
+		a2enmod ssl; \
 	fi; \
 	\
 	savedAptMark="$(apt-mark showmanual)"; \
